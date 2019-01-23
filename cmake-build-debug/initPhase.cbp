@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/student/Desktop/class/IT515/initPhase/main.cpp">
+		<Unit filename="/Users/student/Desktop/class/IT515/initPhase/initial.cc">
 			<Option target="initPhase"/>
 		</Unit>
 		<Unit filename="/Users/student/Desktop/class/IT515/initPhase/CMakeLists.txt">

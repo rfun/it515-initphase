@@ -57,27 +57,27 @@ include CMakeFiles/initPhase.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/initPhase.dir/flags.make
 
-CMakeFiles/initPhase.dir/main.cpp.o: CMakeFiles/initPhase.dir/flags.make
-CMakeFiles/initPhase.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/student/Desktop/class/IT515/initPhase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/initPhase.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/initPhase.dir/main.cpp.o -c /Users/student/Desktop/class/IT515/initPhase/main.cpp
+CMakeFiles/initPhase.dir/initial.cc.o: CMakeFiles/initPhase.dir/flags.make
+CMakeFiles/initPhase.dir/initial.cc.o: ../initial.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/student/Desktop/class/IT515/initPhase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/initPhase.dir/initial.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/initPhase.dir/initial.cc.o -c /Users/student/Desktop/class/IT515/initPhase/initial.cc
 
-CMakeFiles/initPhase.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/initPhase.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/student/Desktop/class/IT515/initPhase/main.cpp > CMakeFiles/initPhase.dir/main.cpp.i
+CMakeFiles/initPhase.dir/initial.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/initPhase.dir/initial.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/student/Desktop/class/IT515/initPhase/initial.cc > CMakeFiles/initPhase.dir/initial.cc.i
 
-CMakeFiles/initPhase.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/initPhase.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/student/Desktop/class/IT515/initPhase/main.cpp -o CMakeFiles/initPhase.dir/main.cpp.s
+CMakeFiles/initPhase.dir/initial.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/initPhase.dir/initial.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/student/Desktop/class/IT515/initPhase/initial.cc -o CMakeFiles/initPhase.dir/initial.cc.s
 
 # Object files for target initPhase
 initPhase_OBJECTS = \
-"CMakeFiles/initPhase.dir/main.cpp.o"
+"CMakeFiles/initPhase.dir/initial.cc.o"
 
 # External object files for target initPhase
 initPhase_EXTERNAL_OBJECTS =
 
-initPhase: CMakeFiles/initPhase.dir/main.cpp.o
+initPhase: CMakeFiles/initPhase.dir/initial.cc.o
 initPhase: CMakeFiles/initPhase.dir/build.make
 initPhase: CMakeFiles/initPhase.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/student/Desktop/class/IT515/initPhase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable initPhase"

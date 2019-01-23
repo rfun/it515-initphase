@@ -123,32 +123,32 @@ initPhase/fast:
 	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/build
 .PHONY : initPhase/fast
 
-main.o: main.cpp.o
+initial.o: initial.cc.o
 
-.PHONY : main.o
+.PHONY : initial.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/main.cpp.o
-.PHONY : main.cpp.o
+initial.cc.o:
+	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/initial.cc.o
+.PHONY : initial.cc.o
 
-main.i: main.cpp.i
+initial.i: initial.cc.i
 
-.PHONY : main.i
+.PHONY : initial.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/main.cpp.i
-.PHONY : main.cpp.i
+initial.cc.i:
+	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/initial.cc.i
+.PHONY : initial.cc.i
 
-main.s: main.cpp.s
+initial.s: initial.cc.s
 
-.PHONY : main.s
+.PHONY : initial.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/main.cpp.s
-.PHONY : main.cpp.s
+initial.cc.s:
+	$(MAKE) -f CMakeFiles/initPhase.dir/build.make CMakeFiles/initPhase.dir/initial.cc.s
+.PHONY : initial.cc.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... initPhase"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... initial.o"
+	@echo "... initial.i"
+	@echo "... initial.s"
 .PHONY : help
 
 

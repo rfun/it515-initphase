@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/initPhase.dir/main.cpp.o"
+  "CMakeFiles/initPhase.dir/initial.cc.o"
   "initPhase.pdb"
   "initPhase"
 )
