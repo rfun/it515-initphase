@@ -3,4 +3,4 @@ project(initPhase)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(initPhase initial.cc)
+add_executable(initPhase solver.cc)
