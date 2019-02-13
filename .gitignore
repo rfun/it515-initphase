@@ -28,7 +28,6 @@ phase2/
 
 # Executables
 *.exe
-*.out
 *.app
 
 ### JetBrains template
@@ -74,4 +73,10 @@ atlassian-ide-plugin.xml
 
 
 
+CMakeCache.txt
+*.cmake
+Makefile
+initPhase.cbp
+
+test/CMakeFiles
 
