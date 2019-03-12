@@ -6,8 +6,17 @@
 #include <math.h>
 #include <fstream>
 #include "include/functions.h"
+#include <cstdlib>
 
 int main(){
+
+    bool checkPointing = false;
+    int checkPointInt = 0;
+
+    if(const char* checkPointEnv = std::getenv("IT515R_INTERVAL")){
+        checkPointing = true;
+        checkPointInt = atoi(checkPointEnv);
+    }
 
     float epsilon, temp=0.0;
     int itrCount, rows , columns;
@@ -51,6 +60,24 @@ int main(){
     bool found = false, stable_flag = true;
 
     while (!isGridStable(main_array, rows, columns, epsilon)){
+
+        if(checkPointing){
+            if(itrCount != 0 && (itrCount%checkPointInt == 0))
+            {
+                // Checkpointing here
+
+                std::string filePath = "chkpt." + std::to_string(itrCount) + ".out";
+
+                std::ofstream out(filePath);
+                std::streambuf *coutbuf = std::cout.rdbuf();
+                std::cout.rdbuf(out.rdbuf()); //redirect std::cout to the file
+
+                writeToFile(main_array, rows, columns, epsilon, itrCount);
+
+                std::cout.rdbuf(coutbuf); //reset to standard output again
+
+            }
+        }
 
         itrCount = itrCount + 1;
         getNextStep(main_array, rows, columns);
