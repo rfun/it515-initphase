@@ -71,6 +71,7 @@ phase2/
 atlassian-ide-plugin.xml
 
 
+.idea/
 
 
 CMakeCache.txt
