@@ -10,6 +10,7 @@
 bool isGridStable(float **main_array, int rows, int columns, float epsilon) {
     bool stable = true;
 
+    #pragma omp parallel for
     for (int j=1;j<rows-1;j++){
         for(int k=1;k<columns-1;k++){
             float array_avg = (main_array[j-1][k] + main_array[j][k-1] + main_array[j][k+1] + main_array[j+1][k])/ 4;
